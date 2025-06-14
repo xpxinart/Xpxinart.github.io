@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Starplex Cinema</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      background: #ff0033;
+      margin: 0;
+      padding: 20px;
+      font-size: 3em;
+    }
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .poster-grid img {
+      width: 100%;
+      height: auto;
+      border: 4px solid #fff;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .poster-grid img:hover {
+      transform: scale(1.05);
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 Starplex Cinema 🎬</h1>
+  <div class="poster-grid">
+    <a href="https://youtube.com" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg" alt="Dark Knight">
+    </a>
+    <a href="https://youtube.com" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Inception_%282010%29_theatrical_poster.jpg" alt="Inception">
+    </a>
+    <a href="https://youtube.com" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Avengers_Infinity_War_poster.jpg" alt="Infinity War">
+    </a>
+    <!-- Add more posters below -->
+  </div>
+</body>
+</html>
